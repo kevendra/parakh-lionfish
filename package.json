@@ -1,0 +1,38 @@
+{
+  "name": "lionfish",
+  "version": "0.0.0",
+  "description": "core components",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kevendra/lionfish.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "ng-annotate": "^1.2.1",
+    "shelljs": "^0.7.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

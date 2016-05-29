@@ -1,0 +1,188 @@
+
+
+/* ****************************** common style start ****************************** */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .data-ng-cloak, .ng-cloak, .x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+a, a:link, a:visited, a:hover, a:active{
+	text-decoration:none;
+	vertical-align:middle;
+	-moz-outline-style: none;
+	//color: $medium-violet-red-light;// $medium-violet-red-light; $turquoiseBlue; $turquoise-blue;
+	// color: $medium-violet-red;
+	// color: $medium-violet-red-light;
+	 // color: $chalk-color-1;
+	// color: $chalk-color-2;
+	//color: $chalk-color-3;
+  color: $button-calm-border;
+}
+.ellipsis{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.icon {
+  //color: $button-calm-border;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.width-100 {
+  width: 100%;
+}
+.item-select select {
+  width: 100%;
+  direction: ltr;
+}
+.padding-top-no-margin-bottom {
+	@extend .padding-top;
+	margin-bottom: 0px;
+}
+.item-btn-style {
+  @extend .button;
+  @extend .button-light;
+  @extend .item;
+  width: 100%;
+  text-align: left;
+  border-radius: 0px;
+  border-bottom: 0px;
+}
+.item-btn:last-child{
+  border-bottom: 1px solid;
+  border-color: $button-light-border;
+}
+.has-error{
+  input[required], .input-label{
+    color: $assertive;
+    @include placeholder {
+      color: $assertive;
+    }
+  }
+}
+.note-info{
+	@extend small;
+	padding: 4px;
+	border: 1px solid ;
+	margin: 10px;
+}
+
+@mixin alert-mixin($color, $lighten) {
+  color: $color;
+  border-color: $color;
+  background-color: lighten($color, $lighten);
+}
+ion-spinner{
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+.alert-msg{
+  position: absolute;
+  width: 100%;
+	z-index: 99;
+  .msg{
+    margin: 5px 0;
+  }
+  .alert-info, .alert-success, .alert-warning, .alert-danger{
+    margin-bottom: 2px;
+    border: 1px solid;
+  }
+  .alert-info {
+    @include alert-mixin($positive, 30%);
+  }
+  .alert-success {
+    @include alert-mixin($balanced, 40%);
+  }
+  .alert-warning {
+    @include alert-mixin($energized, 42%);
+  }
+  .alert-danger {
+    @include alert-mixin($assertive, 30%);
+  }
+}
+/*
+button[class*='ion-']:before {
+  margin: 0 6px 0 0;
+}
+div[class*='section-']{
+}
+*/
+.popup-buttons .button-positive{
+	@extend .button-dark
+}
+.btn-small-dark {
+  @extend .button;
+  @extend .button-small;
+  @extend .button-dark;
+}
+.btn-small-stable {
+  @extend .button;
+  @extend .button-small;
+  @extend .button-stable;
+}
+.btn-small-assertive {
+  @extend .button;
+  @extend .button-small;
+  @extend .button-assertive;
+}
+.btn-dark {
+  @extend .button;
+  @extend .button-block;
+  @extend .button-dark;
+}
+.btn-stable {
+  @extend .button;
+  @extend .button-block;
+  @extend .button-stable;
+  //@extend .ion-ios-close-empty;
+}
+.btn-o-dark, .btn-o-dark:hover {
+  @extend .button;
+  @extend .button-outline;
+  @extend .button-dark;
+	border-color: $dark;
+	color: $dark;
+}
+// .btn-o-stable, .btn-o-stable:hover {
+//   @extend .button;
+//   @extend .button-outline;
+//   @extend .button-stable;
+// }
+.btn-o-assertive, .btn-o-assertive:hover {
+  @extend .button;
+  @extend .button-outline;
+  @extend .button-assertive;
+	border-color: $assertive;
+	color: $assertive;
+}
+//add gap between icon and button text
+.btn-icon-padding,
+[class*='btn-dark ion-']:before, [class*='btn-stable ion-']:before,
+[class*='btn-small-dark ion-']:before, [class*='btn-small-stable ion-']:before, [class*='btn-small-assertive ion-']:before{//[class^='ion-']:before,
+	padding-right: 6px;
+}
+/* ****************************** common style end ****************************** */
+
+/* ****************************** override style start ****************************** */
+.popover {
+  //height: 150px;
+  .item:last-child{
+    border-bottom: 1px solid;
+    border-color: $item-default-border;
+  }
+}
+/* ****************************** override style end ****************************** */
+
+/*
+.ionic-logo{
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+*/

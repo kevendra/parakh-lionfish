@@ -1,0 +1,58 @@
+{
+    "name": "parakh-lionfish",
+    "homepage": "http://www.parakh.me",
+    "authors": [
+        "Kevendra Patidar <kevendra@gmail.com>"
+    ],
+    "description": "Parakh lionfish",
+    "main": [
+        "dist/fonts/ionicons.eot",
+        "dist/fonts/ionicons.svg",
+        "dist/fonts/ionicons.ttf",
+        "dist/fonts/ionicons.woff",
+        "dist/scripts/common-vendor.min.js",
+        "dist/scripts/common-plugins.min.js",
+        "dist/scripts/common-scripts.min.js",
+        "dist/scss/main.scss"
+    ],
+    "moduleType": [
+        "es6",
+        "amd",
+        "globals",
+        "node"
+    ],
+    "keywords": [
+        "core",
+        "edge"
+    ],
+    "license": "MIT",
+    "private": false,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "lib",
+        "tasks",
+        "templates",
+        "*.gemspec",
+        "Rakefile",
+        "Gemfile"
+    ],
+    "dependencies": {
+        "ionic": "~1.3.1",
+        "angular-translate-loader-static-files": "~2.11.0",
+        "angulartics": "~1.0.3",
+        "ngCordova": "~0.1.26-alpha",
+        "angular-filter": "~0.5.8",
+        "lodash": "~4.12.0",
+        "Ionicons": "ionicons#^2.0.1",
+        "angular-wizard": "^0.6.1"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/kevendra/bopack.git"
+    }
+}
